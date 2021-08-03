@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	position: relative;
+}
+
+.main {
+	position: relative;
+	border: 2px solid black;
+}
+
+.input {
+	width: 500px;
+	height: 100px;
+}
+
+.icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 60px;
+}

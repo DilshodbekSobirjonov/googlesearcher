@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Google searcher</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="main">
+			<div class="input">
+				<input type="text" class="InpSearch">
+			<div class="icon">
+				<button id="BtnSearch">Search from google</button>
+			</div>
+			</div>
+		</div>
+	</div>	
+	<script type="text/javascript">
+		let InpSearch = document.querySelector('.InpSearch');
+		let BtnSearch = document.getElementById('BtnSearch');
+
+		BtnSearch.onclick = function(){
+			let	GoogleUrl = 'https://www.google.com/search?q='+InpSearch.value;
+			if(InpSearch.value) window.open(GoogleUrl, '_self');
+		}
+	</script>
+</body> 
+</html>
